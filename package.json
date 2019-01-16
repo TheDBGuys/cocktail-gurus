@@ -1,0 +1,30 @@
+{
+  "name": "cocktail-gurus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kachler/cocktail-gurus.git"
+  },
+  "keywords": [],
+  "author": "Timothy Kachler <kachler@gmail.com> (https://github.com/kachler/starwars-names)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kachler/cocktail-gurus/issues"
+  },
+  "homepage": "https://github.com/kachler/cocktail-gurus#readme",
+  "devDependencies": {
+    "nodemon": "1.18.9"
+  },
+  "dependencies": {
+    "body-parser": "1.18.3",
+    "dotenv": "6.2.0",
+    "express": "4.16.4",
+    "mysql": "2.16.0"
+  }
+}
