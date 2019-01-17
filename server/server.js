@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 require('dotenv').config();
 
 const app = express();
@@ -8,6 +9,7 @@ const cocktailController = require('./controllers/cocktailController');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(cors());
 
 // GET Routes
 app.get('/recipes', cocktailController.getRecipes);
