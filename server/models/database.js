@@ -1,5 +1,6 @@
 const mysql = require('mysql');
 
+// Setting up database connection
 const db = mysql.createConnection({
   host: process.env.DB_HOST,
   user: process.env.DB_USER,
@@ -7,6 +8,7 @@ const db = mysql.createConnection({
   database: process.env.DB_NAME,
 });
 
+// Connecting to database
 db.connect((err) => {
   if (err) {
     console.log(err);

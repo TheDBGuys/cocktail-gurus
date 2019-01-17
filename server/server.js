@@ -9,8 +9,14 @@ const cocktailController = require('./controllers/cocktailController');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.get('/cocktails', cocktailController.getCocktails);
+// GET Routes
+app.get('/recipes', cocktailController.getRecipes);
+// app.get('/ingredients', cocktailController.getIngredients);
 
+// POST Routes
+// app.post('/ingredients', cocktailController.checkIngredients);
+
+// Start server
 app.listen(port, () => {
   console.log(`Server running on port: ${port}`);
 });
