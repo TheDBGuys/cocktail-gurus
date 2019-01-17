@@ -13,12 +13,8 @@ app.use(cors());
 
 // GET Routes
 app.get('/recipes', cocktailController.getRecipes);
-// app.get('/ingredients', cocktailController.getIngredients);
 
-// POST Routes
-// app.post('/ingredients', cocktailController.checkIngredients);
-
-// Start server
+// Starting server
 app.listen(port, () => {
   console.log(`Server running on port: ${port}`);
 });
